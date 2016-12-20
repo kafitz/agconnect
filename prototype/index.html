@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>AgConnect</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu"></div>
+
+    <div class="pure-g container">
+        <!-- Sidebar -->
+        <div class="pure-u-1-4 sidebar">
+            <div class="sidebar-header">
+                <div class="header-title">
+                    Latest Offers
+                </div>
+                <div class="header-sidebar-label">
+                    Region / Country / Units
+                </div>
+            </div>
+            <!-- Offers -->
+            <div class="sidebar-content">
+                <div class="pure-g sidebar-row">
+                    <div class="pure-u-1-3 row-buy">Buy</div>
+                    <div class="pure-u-2-3 row-content">S. America / Peru / 10</div>
+                </div>
+
+                <div class="pure-g sidebar-row">
+                    <div class="pure-u-1-3 row-sell">Sell</div>
+                    <div class="pure-u-2-3 row-content">Africa / Ethiopia / 5</div>
+                </div>
+
+                <div class="pure-g sidebar-row">
+                    <div class="pure-u-1-3 row-buy">Buy</div>
+                    <div class="pure-u-2-3 row-content">Asia / Vietnam / 20</div>
+                </div>
+
+                <div class="pure-g sidebar-row">
+                    <div class="pure-u-1-3 row-buy">Buy</div>
+                    <div class="pure-u-2-3 row-content">N. America / Hawaii / 15</div>
+                </div>
+
+                <div class="pure-g sidebar-row">
+                    <div class="pure-u-1-3 row-sell">Sell</div>
+                    <div class="pure-u-2-3 row-content">S. America / Brazil / 30</div>
+                </div>
+
+                <div class="pure-g sidebar-row">
+                    <div class="pure-u-1-3 row-sell">Sell</div>
+                    <div class="pure-u-2-3 row-content">C. America / Honduras / 10</div>
+                </div>
+
+                <div class="pure-g sidebar-row">
+                    <div class="pure-u-1-3 row-sell">Sell</div>
+                    <div class="pure-u-2-3 row-content">Africa / Kenya / 15</div>
+                </div>
+
+                <div class="pure-g sidebar-row">
+                    <div class="pure-u-1-3 row-buy">Buy</div>
+                    <div class="pure-u-2-3 row-content">S. America / Bolivia / 10</div>
+                </div>
+
+                <div class="pure-g sidebar-row">
+                    <div class="pure-u-1-3 row-sell">Sell</div>
+                    <div class="pure-u-2-3 row-content">C. America / Belize / 5</div>
+                </div>
+
+                <div class="sidebar-row">
+                    <div class="row-see-more">
+                        <a href="#">Click here to view 16 more listings...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map -->
+        <div class="pure-u-3-4 map">
+            <div class="map-content" id="leaflet-map" />
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script type="text/javascript">
+        var map = L.map('leaflet-map', {attributionControl: false}).setView([20, 0], 2);
+        L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
+            maxZoom: 19
+        }).addTo(map);
+    </script>
+</body>
+</html>
