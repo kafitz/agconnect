@@ -3,7 +3,7 @@ import React, { Component, PropTypes } from 'react'
 import { styles } from './mapperStyles.scss'
 
 
-export class MapperComponent extends Component {
+export class Mapper extends Component {
     static propTypes = {}
 
     render() {

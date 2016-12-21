@@ -1,6 +1,7 @@
-var path = require('path')
-var webpack = require('webpack')
-var BundleTracker = require('webpack-bundle-tracker')
+const autoprefixer = require('autoprefixer')
+const path = require('path')
+const webpack = require('webpack')
+const BundleTracker = require('webpack-bundle-tracker')
 
 module.exports = {
     context: __dirname,
@@ -25,7 +26,7 @@ module.exports = {
 
     module: {
         loaders: [
-            { test: /\.scss$/, loaders: ['sass'] },
+            { test: /\.scss$/, loaders: ['style-loader', 'css-loader', 'sass-loader'] },
         ]
     },
 

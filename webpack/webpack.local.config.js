@@ -1,9 +1,9 @@
-var path = require('path')
-var webpack = require('webpack')
-var BundleTracker = require('webpack-bundle-tracker')
+const path = require('path')
+const webpack = require('webpack')
+const BundleTracker = require('webpack-bundle-tracker')
 
-var config = require('./webpack.base.config.js')
-var ip = '127.0.0.1'
+const config = require('./webpack.base.config.js')
+const ip = '127.0.0.1'
 
 config.devtool = '#eval-source-map'
 config.ip = ip

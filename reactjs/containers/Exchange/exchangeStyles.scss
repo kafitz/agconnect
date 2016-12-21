@@ -1,5 +1,17 @@
-// @import 'colors';
+/* @import 'colors'; */
 
 :local(.styles) {
-    
+    .menu {
+        height: 100px;
+    }
+
+    .container {
+        padding: 1em;
+
+        .sidebar {
+            min-width: 300px;
+        }
+
+        .map {}
+    }
 }
